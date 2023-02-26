@@ -49,15 +49,15 @@ namespace test
 
         void Update()
         {
-            if (Direction.gameObject.transform.position.y > 2000 || Direction.gameObject.transform.position.y > -2000f)
+            if (Direction.gameObject.transform.position.y > 2000 || Direction.gameObject.transform.position.y < -2000f)
             {
                 quitbox.GetComponent<Tphome>().OnBoxTriggered();
             }
-            if (Direction.gameObject.transform.position.x > 2000 || Direction.gameObject.transform.position.x > -2000f)
+            if (Direction.gameObject.transform.position.x > 2000 || Direction.gameObject.transform.position.x < -2000f)
             {
                 quitbox.GetComponent<Tphome>().OnBoxTriggered();
             }
-            if (Direction.gameObject.transform.position.z > 2000 || Direction.gameObject.transform.position.z > -2000f)
+            if (Direction.gameObject.transform.position.z > 2000 || Direction.gameObject.transform.position.z < -2000f)
             {
                 quitbox.GetComponent<Tphome>().OnBoxTriggered();
             }
