@@ -72,7 +72,7 @@ namespace test
         public override void OnBoxTriggered()
         {
             Direction.velocity = Vector3.zero;
-				GorillaLocomotion.Player.Instance.GetComponent<Rigidbody>().transform.parent.position = new Vector3(-64f, 12.745f, -83.04f);
+				GorillaLocomotion.Player.Instance.GetComponent<Rigidbody>().transform.parent.position = new Vector3(-66.4736f, 12.7625f, -82.3621f);
 				GorillaLocomotion.Player.Instance.GetComponent<Rigidbody>().transform.localPosition = Vector3.zero;
 				GorillaLocomotion.Player.Instance.InitializeValues();
 				GameObject[] array = this.disableOnStartup;
