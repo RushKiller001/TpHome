@@ -72,19 +72,19 @@ namespace test
         public override void OnBoxTriggered()
         {
             Direction.velocity = Vector3.zero;
-            GorillaLocomotion.Player.Instance.GetComponent<Rigidbody>().transform.parent.position = new Vector3(-64f, 12.745f, -83.04f);
-            GorillaLocomotion.Player.Instance.GetComponent<Rigidbody>().transform.localPosition = Vector3.zero;
-            GorillaLocomotion.Player.Instance.InitializeValues();
-            GameObject[] array = GorillaNetworking.PhotonNetworkController.Instance.disableOnStartup;
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i].SetActive(false);
-            }
-            array = GorillaNetworking.PhotonNetworkController.Instance.enableOnStartup;
-            for (int i = 0; i < array.Length; i++)
-            {
-                array[i].SetActive(true);
-            }
+				GorillaLocomotion.Player.Instance.GetComponent<Rigidbody>().transform.parent.position = new Vector3(-64f, 12.745f, -83.04f);
+				GorillaLocomotion.Player.Instance.GetComponent<Rigidbody>().transform.localPosition = Vector3.zero;
+				GorillaLocomotion.Player.Instance.InitializeValues();
+				GameObject[] array = this.disableOnStartup;
+				for (int i = 0; i < array.Length; i++)
+				{
+					array[i].SetActive(false);
+				}
+				array = this.enableOnStartup;
+				for (int i = 0; i < array.Length; i++)
+				{
+					array[i].SetActive(true);
+				}
         }
         void Awake()
         {
