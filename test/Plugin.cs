@@ -28,15 +28,15 @@ namespace test
 
         void Update()
         {
-            if (PlayerRB.gameObject.transform.position.y > 2000 || PlayerRB.gameObject.transform.position.y < -2000f)
+            if (PlayerRB.gameObject.transform.position.y > 5000 || PlayerRB.gameObject.transform.position.y < -5000f)
             {
                 quitbox.GetComponent<Tphome>().OnBoxTriggered();
             }
-            if (PlayerRB.gameObject.transform.position.x > 2000 || PlayerRB.gameObject.transform.position.x < -2000f)
+            if (PlayerRB.gameObject.transform.position.x > 5000 || PlayerRB.gameObject.transform.position.x < -5000f)
             {
                 quitbox.GetComponent<Tphome>().OnBoxTriggered();
             }
-            if (PlayerRB.gameObject.transform.position.z > 2000 || PlayerRB.gameObject.transform.position.z < -2000f)
+            if (PlayerRB.gameObject.transform.position.z > 5000 || PlayerRB.gameObject.transform.position.z < -5000f)
             {
                 quitbox.GetComponent<Tphome>().OnBoxTriggered();
             }
