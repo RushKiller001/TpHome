@@ -61,9 +61,9 @@ namespace test
         public override void OnBoxTriggered()
         {
             PlayerRB.velocity = Vector3.zero;
-            GorillaLocomotion.Player.Instance.GetComponent<Rigidbody>().transform.parent.position = new Vector3(-66.4736f, 12.7625f, -82.3621f);
-            GorillaLocomotion.Player.Instance.GetComponent<Rigidbody>().transform.localPosition = Vector3.zero;
-            GorillaLocomotion.Player.Instance.InitializeValues();
+            GorillaLocomotion.GTPlayer.Instance.GetComponent<Rigidbody>().transform.parent.position = new Vector3(-66.4736f, 12.7625f, -82.3621f);
+            GorillaLocomotion.GTPlayer.Instance.GetComponent<Rigidbody>().transform.localPosition = Vector3.zero;
+            GorillaLocomotion.GTPlayer.Instance.InitializeValues();
             GameObject[] array = GorillaNetworking.PhotonNetworkController.Instance.disableOnStartup;
             for (int i = 0; i < array.Length; i++)
             {
